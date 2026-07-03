@@ -104,6 +104,26 @@
             font-weight: bold;
             padding: 3px 8px;
             border-radius: 6px;
+            z-index: 2;
+        }
+
+        .store-badge {
+            display: inline-block;
+            font-size: 12px;
+            padding: 3px 10px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .store-badge.amazon {
+            background: #ff9900;
+            color: #000;
+        }
+
+        .store-badge.noon {
+            background: #f5e642;
+            color: #000;
         }
 
         .buy-btn {
@@ -115,10 +135,21 @@
             padding: 10px;
             border-radius: 8px;
             margin-top: auto;
+            font-family: 'Amiri', serif;
+            font-size: 14px;
         }
 
         .buy-btn:hover {
             background: #c29d2e;
+        }
+
+        .buy-btn.noon {
+            background: #f5e642;
+            color: #000;
+        }
+
+        .buy-btn.noon:hover {
+            background: #e0d03a;
         }
 
         .loading, .error {
