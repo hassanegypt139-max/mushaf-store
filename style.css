@@ -2152,3 +2152,107 @@ body.en .scroll-top { right: auto; left: 24px; }
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* ===== TRUST SECTION ===== */
+.trust-section {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f8faf8 0%, #eef5ee 100%);
+  border-bottom: 1px solid rgba(15, 81, 50, 0.08);
+}
+.trust-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.trust-title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text-primary, #1a1a2e);
+  margin-bottom: 35px;
+}
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.trust-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 22px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(15, 81, 50, 0.06);
+}
+.trust-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(15, 81, 50, 0.1);
+}
+.trust-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #0f5132, #1a7a4c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+.trust-icon {
+  width: 26px;
+  height: 26px;
+  color: #d4af37;
+}
+.trust-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary, #1a1a2e);
+  margin-bottom: 10px;
+}
+.trust-card p {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: var(--text-secondary, #555);
+}
+/* Trust section dark mode */
+[data-theme="dark"] .trust-section {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-bottom-color: rgba(255,255,255,0.06);
+}
+[data-theme="dark"] .trust-card {
+  background: #1e2a3a;
+  border-color: rgba(255,255,255,0.06);
+}
+[data-theme="dark"] .trust-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+[data-theme="dark"] .trust-title {
+  color: #e8e8e8;
+}
+[data-theme="dark"] .trust-card h3 {
+  color: #e8e8e8;
+}
+[data-theme="dark"] .trust-card p {
+  color: #aaa;
+}
+/* Trust section responsive */
+@media (max-width: 900px) {
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .trust-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .trust-section {
+    padding: 30px 16px;
+  }
+  .trust-title {
+    font-size: 1.25rem;
+  }
+  .trust-card {
+    padding: 22px 18px;
+  }
+}
